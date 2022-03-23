@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FirstExample.dart';
+import 'LoadAssets.dart';
 import 'MainDirectory.dart';
 import 'RouteValueType.dart';
 import 'TestCounter.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         "WidgetIntroduction": (context) =>
             const WidgetIntroduction(text: 'Widget的介绍'),
         "WidgetStateManagement": (context) => WidgetStateManagement(),
+        "LoadAssets": (context) => LoadAssets(),
       },
 
       ///如果路由表中没有注册，才会调用

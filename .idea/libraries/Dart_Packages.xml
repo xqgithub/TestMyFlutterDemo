@@ -54,7 +54,7 @@
         <entry key="english_words">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/english_words-3.1.5/lib" />
+              <option value="$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/english_words-4.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -201,7 +201,7 @@
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/clock-1.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/collection-1.15.0/lib" />
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/cupertino_icons-1.0.4/lib" />
-      <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/english_words-3.1.5/lib" />
+      <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/english_words-4.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/fake_async-1.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/flutter_lints-1.0.4/lib" />
       <root url="file://$PROJECT_DIR$/../fluttersdk/.pub-cache/hosted/pub.flutter-io.cn/lints-1.0.1/lib" />

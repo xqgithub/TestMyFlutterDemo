@@ -41,6 +41,7 @@ _getDemoListData(BuildContext context) {
   _name.add("计数器应用示例");
   _name.add("Widget介绍");
   _name.add("Widget状态管理");
+  _name.add("加载assets中的资源");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -91,5 +92,8 @@ _pageJump(BuildContext context, int index) {
   } else if (index == 5) {
     ///状态管理
     Navigator.pushNamed(context, "WidgetStateManagement");
+  } else if (index == 6) {
+    ///加载assets文件中的内容
+    Navigator.pushNamed(context, "LoadAssets");
   }
 }
