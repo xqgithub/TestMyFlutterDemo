@@ -15,7 +15,7 @@ class LoadAssets extends StatelessWidget {
           LoadAssetsImg(),
           LoadAssetsFont(),
           SizedBox(
-            height: 200.0, // must
+            height: 180.0, // must
             child: LoadAssetsJson(),
           ),
         ],
@@ -106,7 +106,8 @@ class _LoadAssetsFont extends State<LoadAssetsFont> {
             style: TextStyle(
                 fontFamily: "Charmonman",
                 fontSize: 26.0,
-                color: Colors.deepOrange[400]),
+                color: Colors.deepOrange[400],
+            ),
           ),
         ),
         Padding(
@@ -126,7 +127,8 @@ class _LoadAssetsFont extends State<LoadAssetsFont> {
             style: TextStyle(
                 fontFamily: "pingguolihei",
                 fontSize: 26.0,
-                color: Colors.deepOrange[400]),
+                color: Colors.deepOrange[400],
+            ),
           ),
         ),
       ],

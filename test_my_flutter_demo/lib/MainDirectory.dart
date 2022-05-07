@@ -42,6 +42,7 @@ _getDemoListData(BuildContext context) {
   _name.add("Widget介绍");
   _name.add("Widget状态管理");
   _name.add("加载assets中的资源");
+  _name.add("基础组件");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -95,5 +96,8 @@ _pageJump(BuildContext context, int index) {
   } else if (index == 6) {
     ///加载assets文件中的内容
     Navigator.pushNamed(context, "LoadAssets");
+  }else if (index ==7){
+    ///基础组件
+    Navigator.pushNamed(context, "BasicComponents");
   }
 }

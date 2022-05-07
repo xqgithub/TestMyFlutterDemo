@@ -1,13 +1,36 @@
+library crashy;
+
 import 'package:flutter/material.dart';
+import 'BasicComponents.dart';
 import 'FirstExample.dart';
 import 'LoadAssets.dart';
 import 'MainDirectory.dart';
+import 'PublicPracticalMethod.dart';
 import 'RouteValueType.dart';
 import 'TestCounter.dart';
 import 'WidgetIntroduction.dart';
 import 'WidgetStateManagement.dart';
+import 'dart:async';
 
-void main() => runApp(const MyApp());
+// void main() => runApp(const MyApp());
+
+///程序主入口
+Future<void> main() async {
+  ///框架异常
+  FlutterError.onError = (FlutterErrorDetails details) async {
+    if (isInDebugMode) {
+      ///开发模式
+      FlutterError.dumpErrorToConsole(details);
+    } else {
+      ///线上模式
+      Zone.current.handleUncaughtError(details.exception, details.stack!);
+    }
+  };
+
+  runZonedGuarded<Future<void>>(() async {
+    runApp(const MyApp());
+  }, (error, stackTrace) => _reportError(error, stackTrace));
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -31,6 +54,7 @@ class MyApp extends StatelessWidget {
             const WidgetIntroduction(text: 'Widget的介绍'),
         "WidgetStateManagement": (context) => WidgetStateManagement(),
         "LoadAssets": (context) => LoadAssets(),
+        "BasicComponents": (context) => BasicComponents(),
       },
 
       ///如果路由表中没有注册，才会调用
@@ -45,5 +69,24 @@ class MyApp extends StatelessWidget {
         });
       },
     );
+  }
+}
+
+///判断是否为开发模式
+bool get isInDebugMode {
+  bool inDebugMode = true;
+  assert(inDebugMode = true);
+  return inDebugMode;
+}
+
+///可以通过接口上报错误信息
+Future<void> _reportError(dynamic error, dynamic stackTrace) async {
+  // print('Caught error: $error');
+  LogUtils.e('Caught error =-=  $error');
+  if (isInDebugMode) {
+    // print(stackTrace);
+    // print('In dev mode. Not sending report to Sentry.io.');
+    LogUtils.e('stackTrace =-=  $stackTrace');
+    return;
   }
 }
