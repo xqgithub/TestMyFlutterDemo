@@ -1,12 +1,18 @@
 library crashy;
 
 import 'package:flutter/material.dart';
+import 'AlignRelative.dart';
 import 'BasicComponents.dart';
 import 'FirstExample.dart';
+import 'Flexiblelayout.dart';
+import 'FlowLayout.dart';
+import 'LayoutControls.dart';
 import 'LoadAssets.dart';
 import 'MainDirectory.dart';
 import 'PublicPracticalMethod.dart';
 import 'RouteValueType.dart';
+import 'RowAndColumn.dart';
+import 'StackPositioned.dart';
 import 'TestCounter.dart';
 import 'WidgetIntroduction.dart';
 import 'WidgetStateManagement.dart';
@@ -55,6 +61,12 @@ class MyApp extends StatelessWidget {
         "WidgetStateManagement": (context) => WidgetStateManagement(),
         "LoadAssets": (context) => LoadAssets(),
         "BasicComponents": (context) => BasicComponents(),
+        "LayoutControls": (context) => LayoutControls(),
+        "RowAndColumn": (context) => RowAndColumn(),
+        "Flexible": (context) => FlexibleLayout(),
+        "FlowLayout": (context) => FlowLayout(),
+        "StackPositioned": (context) => StackPositioned(),
+        "AlignRelative": (context) => AlignRelative(),
       },
 
       ///如果路由表中没有注册，才会调用

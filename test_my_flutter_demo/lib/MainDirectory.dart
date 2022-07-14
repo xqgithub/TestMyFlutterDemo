@@ -43,6 +43,12 @@ _getDemoListData(BuildContext context) {
   _name.add("Widget状态管理");
   _name.add("加载assets中的资源");
   _name.add("基础组件");
+  _name.add("布局类组件");
+  _name.add("线性布局(Row和Column)");
+  _name.add("弹性布局");
+  _name.add("流式布局");
+  _name.add("层叠布局,绝对定位");
+  _name.add("对齐与相对定位(Align)");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -96,8 +102,26 @@ _pageJump(BuildContext context, int index) {
   } else if (index == 6) {
     ///加载assets文件中的内容
     Navigator.pushNamed(context, "LoadAssets");
-  }else if (index ==7){
+  } else if (index == 7) {
     ///基础组件
     Navigator.pushNamed(context, "BasicComponents");
+  } else if (index == 8) {
+    ///布局类组件
+    Navigator.pushNamed(context, "LayoutControls");
+  } else if (index == 9) {
+    ///线性布局(Row和Column)
+    Navigator.pushNamed(context, "RowAndColumn");
+  } else if (index == 10) {
+    ///弹性布局
+    Navigator.pushNamed(context, "Flexible");
+  } else if (index == 11) {
+    ///流式布局
+    Navigator.pushNamed(context, "FlowLayout");
+  } else if (index == 12) {
+    ///层叠布局,绝对定位
+    Navigator.pushNamed(context, "StackPositioned");
+  } else if (index == 13) {
+    ///对齐与相对定位(Align)
+    Navigator.pushNamed(context, "AlignRelative");
   }
 }
