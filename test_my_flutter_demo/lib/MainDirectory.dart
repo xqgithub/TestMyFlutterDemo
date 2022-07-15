@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 ///首页列表
@@ -49,6 +48,12 @@ _getDemoListData(BuildContext context) {
   _name.add("流式布局");
   _name.add("层叠布局,绝对定位");
   _name.add("对齐与相对定位(Align)");
+  _name.add("LayoutBuilder、AfterLayout");
+  _name.add("变换（Transform）");
+  _name.add("容器组件(Container)");
+  _name.add("剪裁（Clip）");
+  _name.add("空间适配FittedBox");
+  _name.add("页面骨架(Scaffold)");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -123,5 +128,23 @@ _pageJump(BuildContext context, int index) {
   } else if (index == 13) {
     ///对齐与相对定位(Align)
     Navigator.pushNamed(context, "AlignRelative");
+  } else if (index == 14) {
+    ///LayoutBuilder、AfterLayout
+    Navigator.pushNamed(context, "LayoutBuilderRoute");
+  } else if (index == 15) {
+    ///变换（Transform）
+    Navigator.pushNamed(context, "ChangeTransform");
+  } else if (index == 16) {
+    ///容器组件(Container)
+    Navigator.pushNamed(context, "TestContainer");
+  } else if (index == 17) {
+    ///剪裁（Clip）
+    Navigator.pushNamed(context, "ClipTestRoute");
+  } else if (index == 18) {
+    ///空间适配FittedBox
+    Navigator.pushNamed(context, "FittedBoxRoute");
+  } else if (index == 19) {
+    ///页面骨架(Scaffold)
+    Navigator.pushNamed(context, "ScaffoldRoute");
   }
 }

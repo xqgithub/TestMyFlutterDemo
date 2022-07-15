@@ -3,15 +3,21 @@ library crashy;
 import 'package:flutter/material.dart';
 import 'AlignRelative.dart';
 import 'BasicComponents.dart';
+import 'ChangeTransform.dart';
+import 'ClipTestRoute.dart';
+import 'ContainerComponents.dart';
 import 'FirstExample.dart';
+import 'FittedBoxRoute.dart';
 import 'Flexiblelayout.dart';
 import 'FlowLayout.dart';
+import 'LayoutBuilderAfterLayout.dart';
 import 'LayoutControls.dart';
 import 'LoadAssets.dart';
 import 'MainDirectory.dart';
 import 'PublicPracticalMethod.dart';
 import 'RouteValueType.dart';
 import 'RowAndColumn.dart';
+import 'ScaffoldRoute.dart';
 import 'StackPositioned.dart';
 import 'TestCounter.dart';
 import 'WidgetIntroduction.dart';
@@ -47,7 +53,7 @@ class MyApp extends StatelessWidget {
       title: 'demo列表',
       theme: ThemeData(primaryColor: Colors.white),
 
-      ///注册路由表
+      ///注册路由表0n
       routes: {
         ///首页用 / 命名
         "/": (context) => Directory(),
@@ -67,6 +73,12 @@ class MyApp extends StatelessWidget {
         "FlowLayout": (context) => FlowLayout(),
         "StackPositioned": (context) => StackPositioned(),
         "AlignRelative": (context) => AlignRelative(),
+        "LayoutBuilderRoute": (context) => LayoutBuilderRoute(),
+        "ChangeTransform": (context) => ChangeTransform(),
+        "TestContainer": (context) => TestContainer(),
+        "ClipTestRoute": (context) => ClipTestRoute(),
+        "FittedBoxRoute": (context) => FittedBoxRoute(),
+        "ScaffoldRoute": (context) => ScaffoldRoute(),
       },
 
       ///如果路由表中没有注册，才会调用
