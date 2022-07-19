@@ -18,6 +18,7 @@ import 'PublicPracticalMethod.dart';
 import 'RouteValueType.dart';
 import 'RowAndColumn.dart';
 import 'ScaffoldRoute.dart';
+import 'ScrollableRoute.dart';
 import 'StackPositioned.dart';
 import 'TestCounter.dart';
 import 'WidgetIntroduction.dart';
@@ -79,6 +80,7 @@ class MyApp extends StatelessWidget {
         "ClipTestRoute": (context) => ClipTestRoute(),
         "FittedBoxRoute": (context) => FittedBoxRoute(),
         "ScaffoldRoute": (context) => ScaffoldRoute(),
+        "ScrollableRoute": (context) => ScrollableRoute(),
       },
 
       ///如果路由表中没有注册，才会调用
