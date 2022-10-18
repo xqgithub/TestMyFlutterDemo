@@ -10,6 +10,7 @@ import 'FirstExample.dart';
 import 'FittedBoxRoute.dart';
 import 'Flexiblelayout.dart';
 import 'FlowLayout.dart';
+import 'FunctionalComponent.dart';
 import 'LayoutBuilderAfterLayout.dart';
 import 'LayoutControls.dart';
 import 'LoadAssets.dart';
@@ -81,6 +82,7 @@ class MyApp extends StatelessWidget {
         "FittedBoxRoute": (context) => FittedBoxRoute(),
         "ScaffoldRoute": (context) => ScaffoldRoute(),
         "ScrollableRoute": (context) => ScrollableRoute(),
+        "FunctionComponent": (context) => FunctionComponent(),
       },
 
       ///如果路由表中没有注册，才会调用

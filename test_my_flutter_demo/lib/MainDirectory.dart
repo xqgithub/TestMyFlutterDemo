@@ -55,6 +55,7 @@ _getDemoListData(BuildContext context) {
   _name.add("空间适配FittedBox");
   _name.add("页面骨架(Scaffold)");
   _name.add("可滚动组件(Scrollable)");
+  _name.add("功能型组件(Widget)");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -148,7 +149,10 @@ _pageJump(BuildContext context, int index) {
     ///页面骨架(Scaffold)
     Navigator.pushNamed(context, "ScaffoldRoute");
   } else if (index == 20) {
-    ///页面骨架(Scaffold)
+    ///可滚动组件(Scrollable)
     Navigator.pushNamed(context, "ScrollableRoute");
+  } else if (index == 21) {
+    ///功能型组件(Widget)
+    Navigator.pushNamed(context, "FunctionComponent");
   }
 }
