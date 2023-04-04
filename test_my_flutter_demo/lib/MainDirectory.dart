@@ -56,6 +56,7 @@ _getDemoListData(BuildContext context) {
   _name.add("页面骨架(Scaffold)");
   _name.add("可滚动组件(Scrollable)");
   _name.add("功能型组件(Widget)");
+  _name.add("事件处理与通知");
 
   return ListView.builder(
     ///设置列表的 滑动方向
@@ -154,5 +155,8 @@ _pageJump(BuildContext context, int index) {
   } else if (index == 21) {
     ///功能型组件(Widget)
     Navigator.pushNamed(context, "FunctionComponent");
+  } else if (index == 22) {
+    ///事件处理与通知
+    Navigator.pushNamed(context, "EventAndNotification");
   }
 }

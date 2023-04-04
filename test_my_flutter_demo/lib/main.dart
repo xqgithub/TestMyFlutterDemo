@@ -6,6 +6,7 @@ import 'BasicComponents.dart';
 import 'ChangeTransform.dart';
 import 'ClipTestRoute.dart';
 import 'ContainerComponents.dart';
+import 'EventAndNotification.dart';
 import 'FirstExample.dart';
 import 'FittedBoxRoute.dart';
 import 'Flexiblelayout.dart';
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget {
         "ScaffoldRoute": (context) => ScaffoldRoute(),
         "ScrollableRoute": (context) => ScrollableRoute(),
         "FunctionComponent": (context) => FunctionComponent(),
+        "EventAndNotification": (context) => EventAndNotification(),
       },
 
       ///如果路由表中没有注册，才会调用
